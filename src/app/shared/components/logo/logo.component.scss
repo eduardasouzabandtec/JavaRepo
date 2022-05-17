@@ -1,0 +1,23 @@
+.container__logo {
+    display: flex;
+    align-items: center;
+
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+
+    p,
+    span {
+        font-family: 'Lobster';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 30px;
+    }
+
+    span {
+        color: #FF7426;
+    }
+}
