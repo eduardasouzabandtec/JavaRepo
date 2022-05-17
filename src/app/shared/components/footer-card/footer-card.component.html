@@ -1,10 +1,6 @@
 <section>
-    <div>
-        <app-icon [dataicon]="dataIconfirst"></app-icon>
-        <p> {{ footercard.fork }}</p>
-    </div>
-    <div>
-        <app-icon [dataicon]="dataIconLast"></app-icon>
-        <p> {{ footercard.stars }}</p>
+    <div *ngFor="let footer of footercard">
+        <app-icon [dataicon]="footer.dataIcon"></app-icon>
+        <p> {{ footer.numberInfo }}</p>
     </div>
 </section>

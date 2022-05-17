@@ -8,8 +8,4 @@ import { FooterCard } from './shared/components/footer-card/footer-card.componen
 })
 export class AppComponent {
   title = 'search-repositories';
-  footerCard: FooterCard = {
-    fork: '200',
-    stars: '3000'
-  }
 }

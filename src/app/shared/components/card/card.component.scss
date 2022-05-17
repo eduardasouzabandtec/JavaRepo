@@ -1,0 +1,44 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    &__container {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__info {
+        width: 60%;
+
+        &-name {
+            color: #0969dad1;
+        }
+
+        &-discription {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    .footer {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .card{
+        margin-bottom: 20px;
+    }
+    .card__container {
+        flex-direction: column;
+    }
+    .card__info {
+        order: 2;
+        margin-top: 10px;
+    }
+}
