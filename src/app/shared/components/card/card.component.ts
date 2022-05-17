@@ -16,7 +16,7 @@ export class CardComponent implements OnInit {
     {
       numberInfo: '300',
       dataIcon: {
-        srcImage: 'star.png',
+        srcImage: '../../../../assets/icons/star.png',
         typeIcon: 'mini',
         alt: 'icone de star'
       } 
@@ -24,7 +24,7 @@ export class CardComponent implements OnInit {
     {
       numberInfo: '900',
       dataIcon: {
-        srcImage: 'fork.png',
+        srcImage: '../../../../assets/icons/fork.png',
         typeIcon: 'mini',
         alt: 'icone de fork'
       } 

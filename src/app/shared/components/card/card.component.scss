@@ -24,10 +24,6 @@
             color: rgba(0, 0, 0, 0.6);
         }
     }
-
-    .footer {
-        width: 60%;
-    }
 }
 
 @media screen and (max-width: 430px) {
@@ -36,9 +32,11 @@
     }
     .card__container {
         flex-direction: column;
+        width: 100%;
     }
     .card__info {
         order: 2;
-        margin-top: 10px;
+        margin: 0px 20px;
+        width: 95%;
     }
 }

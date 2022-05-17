@@ -8,7 +8,7 @@ import { DataIcon } from '../icon/icon.component';
 })
 export class ProfileCardComponent implements OnInit {
   @Input() dataIcon: DataIcon = {
-    srcImage: 'dog.jpg',
+    srcImage: '../../../../assets/icons/dog.jpg',
     typeIcon: 'medium',
     alt: 'foto de perfil do usuario'
   }

@@ -12,26 +12,7 @@ export interface FooterCard {
 })
 export class FooterCardComponent implements OnInit {
   @Input() footercard: Array<FooterCard> = [{ numberInfo: '', dataIcon: {srcImage: '', typeIcon: '', alt: '' } }];
-  @Input() dataIconfirst: DataIcon = {
-    srcImage: 'star.png',
-    typeIcon: 'mini',
-    alt: 'icone de star'
-  }
-  @Input() dataIconLast: DataIcon = {
-    srcImage: 'fork.png',
-    typeIcon: 'mini',
-    alt: 'icone de fork'
-  }
-  @Input() dataIcon: Array<DataIcon> = [{
-    srcImage: 'fork.png',
-    typeIcon: 'mini',
-    alt: 'icone de fork'
-  }, {
-    srcImage: 'star.png',
-    typeIcon: 'mini',
-    alt: 'icone de star'
-  }
-  ]
+  
   constructor() { }
 
   ngOnInit(): void {
