@@ -1,2 +1,4 @@
-<app-card [isPullrequest]="isPullrequest"></app-card>
-
+<app-sub-header [repositories]="repositories"></app-sub-header>
+<section *ngFor="let repositorie of repositories">
+    <app-card [repositorie]="repositorie" [isPullRequest]="isPullRequest"></app-card>
+</section>

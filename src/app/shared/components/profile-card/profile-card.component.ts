@@ -13,7 +13,7 @@ export interface DataProfile {
 export class ProfileCardComponent implements OnInit {
   @Input() username: string;
   @Input() urlImage: string;
-  @Input() isPullrequest: boolean;
+  @Input() isPullRequest: boolean;
   dataIcon: DataIcon = {
     typeIcon: 'medium',
     alt: 'foto de perfil do usuario'

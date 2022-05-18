@@ -3,9 +3,19 @@
     flex-direction: column;
     width: 100px;
     align-items: center;
+
     &__name {
         color: #0969da;
         word-break: break-word;
         text-align: center;
     }
+}
+
+.profile_side {
+    flex-direction: row;
+}
+
+.profile__name-side {
+    word-break: normal;
+    margin-left: 12px;
 }

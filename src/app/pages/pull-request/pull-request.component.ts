@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { map } from 'rxjs/operators';
+import { RepositoriesJavaService } from 'src/app/core/services/repositories-java.service';
 
 @Component({
   selector: 'app-pull-request',
@@ -8,23 +9,25 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./pull-request.component.scss']
 })
 export class PullRequestComponent implements OnInit {
-  isPullrequest = true;
+  isPullRequest = true;
   user: string;
-  repositories: string;
-  constructor(private route: ActivatedRoute) {
+  nameRepositories: string;
+  repositories: any = [];
+  constructor(private route: ActivatedRoute, private repositoriesService: RepositoriesJavaService) {
   }
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(
       params => {
         this.user = params['user'];
-        this.repositories = params['repositorie']
+        this.nameRepositories = params['repositorie']
         this.getPullRequest();
         
       });
   }
   getPullRequest() {
-    console.log(this.user, this.repositories)
+    this.repositoriesService.getPullRequest(this.user, this.nameRepositories).subscribe((pullRequests) => this.repositories = pullRequests)
+    console.log(this.user, this.nameRepositories)
   }
 
 }

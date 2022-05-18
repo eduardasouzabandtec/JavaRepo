@@ -19,6 +19,7 @@
         }
 
         &-discription {
+            word-break: break-all;
             font-size: 14px;
             color: rgba(0, 0, 0, 0.6);
         }
@@ -26,4 +27,11 @@
     .footer{
         margin-top: 10px;
     }
+}
+.card__container-side {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.card_info-side{
+    margin-bottom: 12px;
 }

@@ -9,14 +9,16 @@ import { Router } from '@angular/router';
 })
 export class CardComponent implements OnInit {
   @Input() repositorie: any;
-  @Input() isPullrequest: boolean;
+  @Input() isPullRequest: boolean;
   footerRepositories: {}
 
-  constructor(private router: Router ){
+  constructor(private router: Router) {
 
   }
   ngOnInit(): void { }
   navigation() {
-    this.router.navigate(['/pull-request'], { queryParams: { user: this.repositorie.owner.login, repositorie: this.repositorie.name } });
+    if (!this.isPullRequest) {
+      this.router.navigate(['/pull-request'], { queryParams: { user: this.repositorie.owner.login, repositorie: this.repositorie.name } });
+    }
   }
 }

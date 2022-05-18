@@ -1,0 +1,14 @@
+div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-bottom: 3px solid  rgba(255, 118, 38, 0.505);
+    .open {
+        color: #FF7426;
+        margin-right: 12px;
+    }
+    .closed {
+        margin-left: 12px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+}

@@ -12,6 +12,7 @@ import { CardComponent } from './shared/components/card/card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './pages/home/home.component';
 import { PullRequestComponent } from './pages/pull-request/pull-request.component';
+import { SubHeaderComponent } from './shared/components/sub-header/sub-header.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PullRequestComponent } from './pages/pull-request/pull-request.componen
     ProfileCardComponent,
     CardComponent,
     HomeComponent,
-    PullRequestComponent
+    PullRequestComponent,
+    SubHeaderComponent
   ],
   imports: [
     BrowserModule,
