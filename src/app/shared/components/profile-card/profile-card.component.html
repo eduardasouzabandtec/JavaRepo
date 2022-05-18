@@ -1,7 +1,6 @@
-<section class="profile">
+<section class="profile" [ngClass]="{'profile_side': isPullrequest}">
     <div>
-        <app-icon [dataicon]="dataIcon"></app-icon>
+        <app-icon [dataicon]="dataIcon" [urlImage]="urlImage"></app-icon>
     </div>
-    <p class="profile__name"> Username</p>
-    <span class="profile__fullname">Nome Sobrenome</span>
+    <p class="profile__name"> {{ username }}</p>
 </section>

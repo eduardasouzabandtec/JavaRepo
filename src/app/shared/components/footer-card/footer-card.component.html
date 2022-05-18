@@ -1,6 +1,10 @@
 <section>
-    <div *ngFor="let footer of footercard">
-        <app-icon [dataicon]="footer.dataIcon"></app-icon>
-        <p> {{ footer.numberInfo }}</p>
+    <div>
+        <app-icon [dataicon]="iconStar.dataIcon" [urlImage]="iconStar.urlImage"></app-icon>
+        <p> {{ star }}</p>
+    </div>
+    <div>
+        <app-icon [dataicon]="iconFork.dataIcon" [urlImage]="iconFork.urlImage"></app-icon>
+        <p> {{ fork }}</p>
     </div>
 </section>

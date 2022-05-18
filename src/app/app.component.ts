@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FooterCard } from './shared/components/footer-card/footer-card.component';
 
 @Component({
   selector: 'app-root',

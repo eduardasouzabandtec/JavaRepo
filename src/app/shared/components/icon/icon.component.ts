@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 export interface DataIcon {
-  srcImage: string,
   typeIcon: string,
   alt: string
 }
@@ -11,7 +10,8 @@ export interface DataIcon {
   styleUrls: ['./icon.component.scss']
 })
 export class IconComponent implements OnInit {
-  @Input() dataicon: DataIcon = { srcImage: '', typeIcon: '', alt: '' }
+  @Input() dataicon: DataIcon;
+  @Input() urlImage: string;
 
   constructor() { }
 

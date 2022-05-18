@@ -1,14 +1,12 @@
-<section class="card">
+<section class="card border-bottom" [ngClass]="{'card_side': isPullrequest}" (click)="navigation()">
     <div class="card__container">
         <div class="card__info">
-            <p class="card__info-name">Nome do Repo</p>
-            <p class="card__info-discription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatum
-                dignissimos labore explicabo, dolor voluptas iure ullam a vitae, earum voluptates blanditiis officia optio
-                quasi. Similique assumenda optio necessitatibus quisquam! </p>
+            <p class="card__info-name">{{ repositorie?.name }}</p>
+            <p class="card__info-discription">{{ repositorie?.description }} </p>
         </div>
-        <app-profile-card></app-profile-card>
+        <app-profile-card [urlImage]="repositorie?.owner.avatar_url" [username]="repositorie?.owner.login"></app-profile-card>
     </div>
-    <div class="card__container">
-        <app-footer-card [footercard]="footerCard"></app-footer-card>
+    <div class="footer" *ngIf="!isPullrequest">
+        <app-footer-card [fork]="repositorie?.forks" [star]="repositorie?.stargazers_count"></app-footer-card>
     </div>
 </section>

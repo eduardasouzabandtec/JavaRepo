@@ -5,9 +5,7 @@
     align-items: center;
     &__name {
         color: #0969da;
-    }
-    &__fullname{
-        font-size: 11px;
-        color: rgba(0, 0, 0, 0.6);
+        word-break: break-word;
+        text-align: center;
     }
 }

@@ -9,6 +9,9 @@ import { IconComponent } from './shared/components/icon/icon.component';
 import { FooterCardComponent } from './shared/components/footer-card/footer-card.component';
 import { ProfileCardComponent } from './shared/components/profile-card/profile-card.component';
 import { CardComponent } from './shared/components/card/card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './pages/home/home.component';
+import { PullRequestComponent } from './pages/pull-request/pull-request.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,14 @@ import { CardComponent } from './shared/components/card/card.component';
     IconComponent,
     FooterCardComponent,
     ProfileCardComponent,
-    CardComponent
+    CardComponent,
+    HomeComponent,
+    PullRequestComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

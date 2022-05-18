@@ -1,19 +1,18 @@
 .card {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    padding: 15px;
 
 
     &__container {
-        width: 60%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        width: 100%;
+        justify-content: space-between;
     }
 
     &__info {
-        width: 60%;
 
         &-name {
             color: #0969dad1;
@@ -24,19 +23,7 @@
             color: rgba(0, 0, 0, 0.6);
         }
     }
-}
-
-@media screen and (max-width: 430px) {
-    .card{
-        margin-bottom: 20px;
-    }
-    .card__container {
-        flex-direction: column;
-        width: 100%;
-    }
-    .card__info {
-        order: 2;
-        margin: 0px 20px;
-        width: 95%;
+    .footer{
+        margin-top: 10px;
     }
 }
