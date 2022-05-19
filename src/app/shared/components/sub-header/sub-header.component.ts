@@ -1,4 +1,5 @@
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { DataIcon } from '../icon/icon.component';
 
 @Component({
   selector: 'app-sub-header',
@@ -9,6 +10,11 @@ export class SubHeaderComponent implements OnInit, OnChanges{
   @Input() repositories: any = []
   opened: number;
   closed = 0;
+  dataIcon : DataIcon = {
+    alt: 'Icone para voltar a home',
+    typeIcon: 'mini'
+  }
+  srcImage = '../../../../assets/icons/right-arrow.png';
   constructor() { }
 
   ngOnInit(): void {

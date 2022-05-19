@@ -1,5 +1,8 @@
-<div>
-    <p class="open"> {{ opened }} OPENED</p>
-    /
-    <p class="closed"> {{ closed }} CLOSED</p>
+<div class="container">
+    <app-icon [routerLink]="['']" class="icon" [dataicon]="dataIcon" [urlImage]="srcImage"></app-icon>
+    <div>
+        <p class="open"> {{ opened }} OPENED</p>
+        /
+        <p class="closed"> {{ closed }} CLOSED</p>
+    </div>
 </div>

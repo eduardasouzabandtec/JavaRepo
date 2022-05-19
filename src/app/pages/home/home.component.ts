@@ -14,16 +14,9 @@ export class HomeComponent implements OnInit, OnChanges {
     this.initCard();
   }
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes.repositories) {
-      console.log('oi')
-    }
   }
   initCard() {
     this.repositoriesJavaService.getRepositories(1)
-      .subscribe({
-        next: (data: any) => this.repositories = data.items,
-        error: (erro) => console.log(erro),
-        complete: () => console.log(this.repositories)
-      })
+      .subscribe((data: any) => this.repositories = data.items);
   }
 }

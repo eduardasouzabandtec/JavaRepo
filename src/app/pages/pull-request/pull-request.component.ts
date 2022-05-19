@@ -22,12 +22,10 @@ export class PullRequestComponent implements OnInit {
         this.user = params['user'];
         this.nameRepositories = params['repositorie']
         this.getPullRequest();
-        
       });
   }
   getPullRequest() {
-    this.repositoriesService.getPullRequest(this.user, this.nameRepositories).subscribe((pullRequests) => this.repositories = pullRequests)
-    console.log(this.user, this.nameRepositories)
+    this.repositoriesService.getPullRequest(this.user, this.nameRepositories).subscribe((pullRequests) => this.repositories = pullRequests);
   }
 
 }

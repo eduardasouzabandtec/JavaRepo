@@ -9,7 +9,7 @@ export class RepositoriesJavaService {
 
   constructor(private http: HttpClient) { }
 
-  getRepositories(numberPage: number): Observable<string> {
+  getRepositories(numberPage: number = 1): Observable<string> {
     const URL = `https://api.github.com/search/repositories?q=language:Java&sort=stars&page=${numberPage}`;
     return this.http.get<string>(URL)
   }
