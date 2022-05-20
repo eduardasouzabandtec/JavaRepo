@@ -23,15 +23,24 @@
             font-size: 14px;
             color: rgba(0, 0, 0, 0.6);
         }
+
+        &-date {
+            margin-top: 10px;
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.6);
+        }
     }
-    .footer{
+
+    .footer {
         margin-top: 10px;
     }
 }
+
 .card__container-side {
     flex-direction: column;
     align-items: flex-start;
 }
-.card_info-side{
+
+.card_info-side {
     margin-bottom: 12px;
 }

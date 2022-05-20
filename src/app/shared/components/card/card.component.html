@@ -3,6 +3,7 @@
         <div class="card__info" [ngClass]="{'card_info-side': isPullRequest}">
             <p class="card__info-name">{{ repositorie?.name || repositorie?.title }}</p>
             <p class="card__info-discription">{{ repositorie?.description || repositorie?.body }} </p>
+            <p class="card__info-date"  *ngIf="isPullRequest"> {{ repositorie?.updated_at | date}}</p>
         </div>
         <app-profile-card [urlImage]="repositorie?.owner?.avatar_url || repositorie?.user?.avatar_url" [username]="repositorie?.owner?.login || repositorie?.user?.login" [isPullRequest]="isPullRequest"></app-profile-card>
     </div>
